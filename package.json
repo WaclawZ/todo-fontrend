@@ -33,7 +33,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "prettier --write src",
+    "precommit": "npm run lint && npm test",
+    "prepush": "npm run lint"
   },
   "eslintConfig": {
     "extends": "react-app"

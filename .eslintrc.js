@@ -3,38 +3,33 @@ module.exports = {
     browser: true,
     es6: true,
   },
-  extends: [
-    'plugin:react/recommended',
-    'airbnb',
-    'prettier'
-  ],
+  extends: ["plugin:react/recommended", "airbnb", "prettier"],
   globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
+    Atomics: "readonly",
+    SharedArrayBuffer: "readonly",
   },
-  parser: '@typescript-eslint/parser',
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
     ecmaVersion: 2018,
-    sourceType: 'module',
+    sourceType: "module",
   },
-  plugins: [
-    'react',
-    '@typescript-eslint',
-    'prettier'
-  ],
+  plugins: ["react", "@typescript-eslint", "prettier"],
   rules: {
-    "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".jsx"] }],
+    "react/jsx-filename-extension": [1, { extensions: [".tsx", ".jsx"] }],
     "react/jsx-indent": [2, 2],
     "import/no-unresolved": 0,
-    "import/extensions": ["error", {
-      "js": "never",
-      "jsx": "never",
-      "ts": "never",
-      "tsx": "never"
-    }],
-    "prettier/prettier": ["error"]
+    "import/extensions": [
+      "error",
+      {
+        js: "never",
+        jsx: "never",
+        ts: "never",
+        tsx: "never",
+      },
+    ],
+    "prettier/prettier": ["error"],
   },
 };

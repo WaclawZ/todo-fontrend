@@ -21,8 +21,9 @@ module.exports = {
     "react/jsx-filename-extension": [1, { extensions: [".tsx", ".jsx"] }],
     "react/jsx-indent": [2, 2],
     "import/no-unresolved": 0,
+    "import/prefer-default-export": 0,
     "import/extensions": [
-      "error",
+      0,
       {
         js: "never",
         jsx: "never",
